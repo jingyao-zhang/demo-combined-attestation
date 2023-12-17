@@ -3,6 +3,9 @@
 ## Overview
 This project demonstrates the integration of H100 attestation via nvTrust with CPU evidence, verified through the [Key Broker Service (KBS)](https://github.com/confidential-containers/kbs) as part of the Confidential Containers project. The aim is to provide a secure and scalable attestation method in a containerized environment.
 
+## Demo
+[Demo Video](https://www.youtube.com/watch?v=PUM6HVjNAm8)
+
 ## Prerequisites
 - Ubuntu 22.04
 - This project has been tested exclusively on Ubuntu 22.04.
@@ -66,7 +69,7 @@ cd tests
 python LocalGPUTest.py
 ```
 
-### Testing KBS
+## Testing KBS
 Follow these steps to test the KBS setup:
 ```bash
 cd ../../../../kbs
@@ -93,7 +96,7 @@ sudo RUST_LOG=debug AA_SAMPLE_ATTESTER_TEST=1 RUST_BACKTRACE=full kbs-client --u
 kbs-client --url http://127.0.0.1:50002 get-resource --attestation-token test/attestation_token --tee-key-file test/tee_key.pem --path default/test/dummy
 ```
 
-### Contributing
+## Contributing
 We welcome contributions to enhance the Combined Attestation project.
 
 ## License
